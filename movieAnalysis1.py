@@ -36,9 +36,7 @@ df_edited.rename(
 )
 
 df_edited['Title'] = df_edited['Title'].astype(str).str[:-1]
-# df_edited['Keywords'] = df_edited['Keywords'].tolist()
-# df_edited['Genres'] = df_edited['Genres'].tolist()
-# print(type(df_edited['Genres']))
+
 
 df_edited = df_edited[["Title", "Director", "Year_of_Release", "Genres", "Budget", "Revenue", "Duration", "Language", "Country",\
 "Lead_Actor", "Supporting_Actor_1", "Supporting_Actor_2", "IMDb_Rating", "Keywords"]]
