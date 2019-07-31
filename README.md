@@ -14,13 +14,10 @@ are converted from Panda Seriess to Lists of Lists for easy iteration.
   The resulting DataFrame is saved as a CSV file named "edited_movie_database.csv" when MovieAnalysis.py is run.
 
 2) ACQUIRING THE LIST:
-  UserList.py is run with the URL of the Letterboxd list to be analyzed. A webscraper is used to create a list of all titles 
-of all movies. Then, each movie is searched for in edited_movie_database.csv. If it is not found, the information is found with
-a webscraper and the TMDB (The Movie Database) API.
+  acquireList.py is run with the URL of the Letterboxd list to be analyzed. A webscraper is used to create a list of all titles of all movies. Then, each movie is searched for in edited_movie_database.csv. If it is not found, the information is found witha webscraper and the TMDB (The Movie Database) API.
   The resulting information for all titles in the list is put into a DataFrame, and then saved as a CSV file named "Search.csv".
   
 3) ANALYSIS:
-  In analysis.py, the "Search.csv" file is analyzed to provide mean budget, revenue, duration, and rating. Additionally, matlib 
-  plots are made for top genres, actors, and directors. A word cloud is made for keywords. This is saved as png file.
+  In analysis.py, the "Search.csv" file is analyzed to provide mean budget, revenue, duration, and rating. Additionally, matlib plots are made for top genres, actors, and directors. A word cloud is made for keywords. This is saved as png file.
   
 
