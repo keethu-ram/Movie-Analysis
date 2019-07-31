@@ -3,27 +3,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 from collections import Counter
-# import tmdbsimple as tmdb
-# tmdb.API_KEY = '44a0f0e5fee385f86145ce25a43b55de'
 import csv
 import sys
 
 df = pd.read_csv('movie_metadata.csv')
-#print(df.head(1)) #1st entry
-#print(df.describe()) #describes data set features and shows obv issues w/ revenue and budget cols
-
-#df_budget_zero = df.query('budget == 0') #all entries w/ 0 budget but this was a prob w the first dataset I used not this one
-#print(df_budget_zero.head(10)) #first 10 results w/ 0 budget again, not necessary w/ new dataset
-# df_revenue_zero = df.query('gross == 0') #all entries w/ 0 revenue
-# df_runtime_zero = df.query('duration == 0')
-
-# drop_cols = ['color', 'num_critic_for_reviews', 'facenumber_in_poster', 'movie_imdb_link', 'num_user_for_reviews']
-# df.drop(drop_cols, axis = 1, inplace = True) #there's an error w/ this not sure why
-# #print(df.head(1)) #checking if dropped
-# df.drop_duplicates(inplace = True) #there are a few duplicate entries so getting rid of them
-#
-# drop_values = ['director_name','genres']
-# df.dropna(subset = drop_values, how = 'any', inplace = True) #getting rid of rows w/ empty results for director and genre since there are just a few
 
 df_edited = df.drop(["color", "num_critic_for_reviews", "actor_3_facebook_likes", "actor_1_facebook_likes",\
             "num_voted_users", "facenumber_in_poster", "num_user_for_reviews",\
