@@ -26,7 +26,7 @@ def commonWordsList(column):
 
 def commonWords(column, c2 = [], c3 = []):
     """
-    Given a column(s) (that is essentially a 1D list without any nested lists),\
+    Given a column(s) (that is practically a 1D list without any nested lists),\
     this method turns it into a list, and then returns the top 4 most common \
     entries. If more there is more than 1 column provided, it turns all given \
     columns into lists, joins them to create a single bigger list, and then \
