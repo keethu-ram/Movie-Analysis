@@ -18,6 +18,6 @@ are converted from Panda Seriess to Lists of Lists for easy iteration.
   The resulting information for all titles in the list is put into a DataFrame, and then saved as a CSV file named "Search.csv".
   
 3) ANALYSIS:
-  In analysis.py, the "Search.csv" file is analyzed to provide mean budget, revenue, duration, and rating. Additionally, matlib plots are made for top genres, actors, and directors. A word cloud is made for keywords. This is saved as png file.
+  In analysis.py, the "Search.csv" file is analyzed to provide mean budget, revenue, duration, and rating. Additionally, matlib plots are made for top genres, actors, and directors. A word cloud is made for keywords. 
   
 
