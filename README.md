@@ -1,4 +1,4 @@
-# Movie-Analysis
+# PART 1: Movie-Analysis
 Analyzing a given Letterboxd list by using both webscraped information, the TMDB API, and an existing dataset, providing a word
 cloud of most common keywords, details about most represented actors, directors, genres, etc. (through matlib plots), and
 average budget and revenue. This is used to understand the movie habits and preferences of the user.
